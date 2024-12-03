@@ -61,3 +61,36 @@ User Dashboard
  operations on user accounts enhances administrative control while maintaining security. This project
  exemplifies the integration of modern technologies to create an efficient and secure web application
  tailored to meet the needs of both users and administrators.
+
+
+├── backend/
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── userController.js
+│   ├── middlewares/
+│   │   ├── authMiddleware.js
+│   ├── models/
+│   │   ├── User.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── userRoutes.js
+│   ├── config/
+│   │   ├── db.js
+│   ├── server.js
+│   ├── .env
+│   ├── package.json
+
+frontend/
+├── public/
+│   ├── index.html
+├── src/
+│   ├── components/
+│   │   ├── AuthForm.js       # Handles login/register toggle
+│   ├── pages/
+│   │   ├── AdminDashboard.js # Admin-specific dashboard
+│   │   ├── UserDashboard.js  # User-specific dashboard
+│   ├── services/
+│   │   ├── api.js            # Centralized API requests
+│   ├── App.js                # Routing and main structure
+│   ├── index.js              # Entry point for React app
+├── package.json
